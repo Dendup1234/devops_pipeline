@@ -1,0 +1,13 @@
+name: CI_Pipelines
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: checkout code
+      uses: actions/checkout@v5  
